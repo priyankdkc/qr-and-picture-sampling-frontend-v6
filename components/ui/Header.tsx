@@ -21,6 +21,7 @@ const Header = () => {
         <Link href="/missing-details">Missing Details</Link>
         <Link href="/update-style-number">Update Style Number</Link>
         <Link href="/multiple-samples-present">Multiples Samples</Link>
+        <Link href="/list-qrs">List Qrs</Link>
 
         <button onClick={() => router.push("/")}>
           <Home size={20} />

@@ -33,3 +33,12 @@ export type MissingDetailsDataType = {
   created_by: string | null;
   updated_by: string | null;
 };
+
+export type StyleItem = {
+  id: string;
+  qr_code: string;
+  picture: string;
+  style_name: string;
+  created_by: string | null;
+  updated_by: string | null;
+};
