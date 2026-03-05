@@ -39,7 +39,7 @@ const Page = () => {
       setError("");
 
       const res = await fetch(
-        ${process.env.NEXT_PUBLIC_API_URL}/v1/list-qr-for-names/?page=${pageNumber},
+        `${process.env.NEXT_PUBLIC_API_URL}/v1/list-qr-for-names/?page=${pageNumber}`,
         {
           method: "GET",
           headers: {
@@ -101,12 +101,12 @@ const Page = () => {
 
       try {
         await fetch(
-          ${process.env.NEXT_PUBLIC_API_URL}/v1/update-style-name/,
+          `${process.env.NEXT_PUBLIC_API_URL}/v1/update-style-name/`,
           {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization: Token ${token},
+              Authorization: `Token ${token}`,
             },
             body: JSON.stringify({
               id,
